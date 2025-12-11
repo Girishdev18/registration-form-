@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login-box">
+        <form class="login-form" id="registration">
+        <h1> Registration Form</h1>
+            <div class="input-box">
+            <label> First Name</label><br>
+            <input type="text"  id="fname" name="firstname" placeholder="Enter your first name" required><br>
+            </div>
+
+            <div class="input-box">
+            <label> Last Name</label><br>
+            <input type="text"  id="lname" name="lastname" placeholder="Enter your last name" required><br>
+            </div>
+            
+            <div class="input-box">
+            <label> Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required ><br>
+            </div>
+
+            <div class="input-box">
+            <label> Password</label><br>
+            <input type="password"  id="pass" name="password" placeholder="Enter your password"required>
+            </div>
+
+            <button onclick="registerform(event)" type="submit"> Register </button>
+
+            <p id="message" class="error"></p>
+
+            <p> Already have an account ? <a href=""> Login </a></p>
+            </form>
+    </div>
+    <script src="login.js">
+    </script>
+</body>
+</html>
